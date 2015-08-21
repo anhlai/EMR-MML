@@ -1,0 +1,115 @@
+☆☆☆ MML Inspector - MMLドキュメント読み込みプラグインモジュール開発説明書
+
+目次
+
+　1. はじめに
+　2. 実装方法
+　3. 配置方法
+　4. MmlLoaderアセンブリの説明
+　5. サンプル
+
+
+1. はじめに
+
+　MMLドキュメント読み込みプラグインモジュールは、MML InspectorがStand-alone Mode
+において、MMLドキュメントを読み込むために呼び出すモジュールです。データベース
+アクセスやプログラム間通信などのロジックを実装することにより、さまざまなデータソース
+からMMLドキュメントを読み込むことが可能になります。
+
+
+2. 実装方法
+
+　MMLドキュメント読み込みプラグインモジュールの形態は、プラグインインタフェース
+(IMmlLoader)を実装した.NETクラスライブラリ(dll)になります。
+
+・Visual Studioを使用した場合
+　(1) 「クラスライブラリ」プロジェクトを作成します。
+　(2) 参照設定に、MmlLoaderアセンブリ(dev\MmlLoader\assembly\MmlLoader.dll)を
+      追加します。
+　(3) クラスを作成し、IMmlLoaderインタフェースを実装します。
+　    ※IMmlLoaderを実装したクラスは、同一dll内に1個になるようにしてください。
+　(4) IMmlLoader.Loadメソッドを作成します。
+
+
+3. 配置方法
+
+　作成したMMLドキュメント読み込みプラグインモジュールは、MML Inspectorの
+実行ファイル(MmlInspector.exe)と同じディレクトリに移動またはコピーします。
+
+　MML Inspectorは、MmlInspector.exeが存在するディレクトリ内からMMLドキュメント
+読み込みプラグインモジュールを検出し、適用します。ディレクトリ内に複数の
+MMLドキュメント読み込みプラグインモジュールが存在する場合は、いずれか1個が
+適用されます。
+
+　MML InspectorがMMLドキュメント読み込みプラグインモジュールを適用した場合、
+画面上部に「MML Loader:」に続いて適用したMMLドキュメント読み込みプラグイン
+モジュールのファイル名を表示します。いずれのMMLドキュメント読み込みプラグイン
+モジュールも適用せず、組み込みの読み込み機能を使用する場合は、
+「MML Loader: Built-in File Loader」が表示されます。
+
+
+4. MmlLoaderアセンブリの説明
+
+　MmlLoaderアセンブリには、以下のクラス、インタフェースが含まれています。
+
+[クラス]
+　MmlLoaderException … MMLドキュメント読み込みプラグインモジュールで
+　　　　　　　　　　　　発生した例外を表します。
+
+[インタフェース]
+　IMmlLoader … MMLドキュメント読み込みプラグインモジュールのプラグイン
+　　　　　　　　インタフェースのメソッドを定義します。
+
+4.1 IMmlLoader
+
+名前空間: Yos731.MmlLoader
+構文: public interface IMmlLoader
+メソッド:
+bool Load(out string mml, out string description)
+  mml … 読み込んだMMLドキュメント
+  description … MMLドキュメントの説明文字列。MML Inspectorの画面上部の
+　　　　　　　　 テキストボックスに表示されます。
+  戻り値: 読み込みに成功した場合はtrue、それ以外の場合はfalse
+説明: MMLドキュメントを読み込む処理を実装します。処理中にエラーが発生した場合は、
+　　　MmlLoaderException例外をスローしてください。例外をスローせず、戻り値に
+　　　falseを設定した場合は、読み込みをキャンセルした流れになります。
+
+4.2 MmlLoaderException
+
+名前空間: Yos731.MmlLoader
+構文: public class MmlLoaderException : Exception
+コンストラクタ:
+public MmlLoaderException(string message, Exception, innerException)
+  message … 現在の例外を説明するメッセージ
+  description … 現在の例外の原因である例外。内部例外を指定しない場合はnullを設定
+
+
+5. サンプル
+
+5.1 TextBoxMmlLoaderサンプル
+
+　TextBoxMmlLoaderサンプルは、MMLを入力するテキストボックスを配置したウィンドウを
+表示します。使用するには、TextBoxMmlLoader.dllをMmlInspector.exeと同じディレクトリに
+移動またはコピーします。
+
+　開発環境: Visual Studio 2010 (C#) .NET Framework 3.5
+
+5.2 SqlServerMmlLoaderサンプル
+
+　SqlServerMmlLoaderサンプルは、患者番号を入力するダイアログを表示し、入力された
+患者番号を検索キーにしてSQL ServerからMMLドキュメントを取得します。サンプル中の
+接続文字列やクエリは架空のテスト環境を想定していますので、動作させる環境に合わせて
+適宜変更してください。
+
+　開発環境: Visual Studio 2010 (C#) .NET Framework 3.5
+
+5.3 V23MmlLoaderサンプル
+
+　V23MmlLoaderサンプルは、MML Version 2.3で記述されたMMLドキュメントを読み込むための
+MMLドキュメント読み込みプラグインモジュールです。
+
+　開発環境: Visual Studio 2010 (C#) .NET Framework 3.5
+
+
+---
+Copyright (C) 2012 2013 yos731, All rights reserved.

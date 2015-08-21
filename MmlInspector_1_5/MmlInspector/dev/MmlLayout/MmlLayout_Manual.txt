@@ -1,0 +1,138 @@
+☆☆☆ MML Inspector - MMLドキュメントレイアウトプラグインモジュール開発説明書
+
+目次
+
+　1. はじめに
+　2. 実装方法
+　3. 配置方法
+　4. MmlLoaderアセンブリの説明
+　5. サンプル
+
+
+1. はじめに
+
+　MMLドキュメントレイアウトプラグインモジュールは、MML InspectorがMMLドキュメントを
+表示するために呼び出すモジュールです。表示レイアウトはMmlHeader, MMLコンポーネント
+モジュール毎に個別に用意することができます。MML Inspectorは、同時に複数のMMLドキュメント
+レイアウトプラグインモジュールを適用することができ、MmlHeaderまたは同じMMLコンポーネント
+モジュールを対象に複数のレイアウトが存在する場合は、動的に切り替えながら使用する
+ことが可能です。
+
+
+2. 実装方法
+
+　MMLドキュメントレイアウトプラグインモジュールの形態は、プラグインインタフェース
+(IMmlLayout)を実装した.NETクラスライブラリ(dll)になります。
+
+・Visual Studioを使用した場合
+　(1) 「クラスライブラリ」プロジェクトを作成します。
+　(2) 参照設定に、MmlLayoutアセンブリ(dev\MmlLayout\assembly\MmlLayout.dll)を
+      追加します。
+　(3) クラスを作成し、IMmlLayoutインタフェースを実装します。
+　    ※同一dll内にIMmlLayoutを実装したクラスを複数定義できます。
+　(4) IMmlLoaderインタフェースメソッドを作成します。
+
+
+3. 配置方法
+
+　作成したMMLドキュメントレイアウトプラグインモジュールは、MML Inspectorの
+実行ファイル(MmlInspector.exe)と同じディレクトリに移動またはコピーします。
+
+　MML Inspectorは、MmlInspector.exeが存在するディレクトリ内からMMLドキュメント
+レイアウトプラグインモジュールを検出し、適用します。ディレクトリ内に複数の
+MMLドキュメントレイアウトプラグインモジュールが存在する場合は、すべての
+モジュールが適用されます。
+
+　MML InspectorがMMLドキュメントレイアウトプラグインモジュールを適用した場合、
+MmlHeaderまたはMMLコンポーネントモジュールを表示する際に、対応するレイアウト
+名称がLayoutコンボボックスに列挙されます。
+
+
+4. MmlLayoutアセンブリの説明
+
+　MmlLayoutアセンブリには、以下のクラス、インタフェースが含まれています。
+
+[クラス]
+　MmlLayoutException … MMLドキュメントレイアウトプラグインモジュールで
+　　　　　　　　　　　　発生した例外を表します。
+
+[インタフェース]
+　IMmlLayout … MMLドキュメントレイアウトプラグインモジュールのプラグイン
+　　　　　　　　インタフェースのメソッドを定義します。
+
+[delegate]
+　ShowMmlDocumentHandler … MMLドキュメントを構成するタグのXMLを表示する場合に
+                            呼び出されるコールバックメソッドを参照します。
+
+4.1 IMmlLayout
+
+名前空間: Yos731.MmlLayout
+構文: public interface IMmlLayout
+メソッド:
+string getMmlModule();
+  戻り値: MMLコンテンツモジュールの識別文字列
+説明: 処理対象とするMmlHeaderまたはMMLコンポーネントモジュールの識別文字列を
+　　　返します。識別文字列は、以下のとおりです。
+　　　MmlHeader … "MmlHeader"
+　　　患者情報モジュール … "patientInfo"
+　　　健康保険情報モジュール … "healthInsurance"
+　　　診断履歴情報モジュール … "registeredDiagnosis"
+　　　生活習慣情報モジュール … "lifestyle"
+　　　基礎的診療情報モジュール … "baseClinic"
+　　　初診時特有情報モジュール … "firstClinic"
+　　　経過記録情報モジュール … "progressCourse"
+　　　手術記録情報モジュール … "surgery"
+　　　臨床サマリ情報モジュール … "summary"
+　　　予約請求モジュール … "claim"
+　　　点数金額モジュール … "claimAmount"
+　　　紹介状モジュール … "referral"
+　　　検歴情報モジュール … "test"
+　　　報告書情報モジュール … "report"
+
+string getLayoutName();
+  戻り値: レイアウト名称
+説明: レイアウトの名称。Layoutコンボボックスに表示されます。
+
+System.Windows.Controls.Canvas render(System.Xml.Linq.XElement mml)
+  mml … レイアウト対象のMMLドキュメントの要素。
+         処理対象がMmlHeaderの場合は<MmlHeader>タグ、MMLコンテンツモジュールの場合は<section>タグ。
+  戻り値: 描画要素を配置したCanvasオブジェクト
+説明: レイアウトロジックを実装します。
+
+イベント:
+event ShowMmlDocumentHandler ShowMmlDocument;
+説明: MMLドキュメントを構成するタグのXMLを表示する場合に発生します。
+
+
+4.2 MmlLayoutException
+
+名前空間: Yos731.MmlLayout
+構文: public class MmlLayoutException : Exception
+コンストラクタ:
+public MmlLayoutException(string message, Exception, innerException)
+  message … 現在の例外を説明するメッセージ
+  description … 現在の例外の原因である例外。内部例外を指定しない場合はnullを設定
+
+
+4.3 delegate
+
+名前空間: Yos731.MmlLayout
+構文: public delegate void ShowMmlDocumentHandler(System.Xml.Linq.XElement mmlTag)
+  mmlTag … XMLを表示する表示するMMLのタグ
+説明: MMLドキュメントを構成するタグのXMLを表示する場合に呼び出されるコールバックメソッドを参照します。
+
+
+5. サンプル
+
+5.1 SampleMmlLayoutサンプル
+
+　SampleMmlLayoutサンプルは、MmlHeader用のMMLドキュメントレイアウトプラグインモジュールの
+サンプルです。MmlHeaderタグを解析するロジックは実装していませんので、ひな形として参考に
+してください。SampleMmlLayout.dllをMmlInspector.exeと同じディレクトリにコピーまたは移動
+すると、MmlHeaderのレイアウトとして適用され、ダミー文字列が表示されます。
+
+　開発環境: Visual Studio 2010 (C#) .NET Framework 3.5
+
+
+---
+Copyright (C) 2012 2013 yos731, All rights reserved.

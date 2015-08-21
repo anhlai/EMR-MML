@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6200D4F-1E77-44CC-87BF-E690D006051C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MedicalInterface</RootNamespace>
+    <AssemblyName>MedicalInterface</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FacilityInfo.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="InterfaceFacade.cs" />
+    <Compile Include="Mml23\Claim\AppointItem.cs" />
+    <Compile Include="Mml23\Claim\BundleDetailItem.cs" />
+    <Compile Include="Mml23\Claim\BundleItem.cs" />
+    <Compile Include="Mml23\Claim\ClaimModule.cs" />
+    <Compile Include="Mml23\Claim\EventItem.cs" />
+    <Compile Include="Mml23\Claim\FilmItem.cs" />
+    <Compile Include="Mml23\Claim\LocationItem.cs" />
+    <Compile Include="Mml23\Claim\NumberItem.cs" />
+    <Compile Include="Mml23\Mml.cs" />
+    <Compile Include="Mml23\MmlAccessRight.cs" />
+    <Compile Include="Mml23\MmlAd\Address.cs" />
+    <Compile Include="Mml23\MmlBody.cs" />
+    <Compile Include="Mml23\MmlCi\CreatorInfo.cs" />
+    <Compile Include="Mml23\MmlCi\CreatorLicense.cs" />
+    <Compile Include="Mml23\MmlCm\ExternalReference.cs" />
+    <Compile Include="Mml23\MmlCm\Id.cs" />
+    <Compile Include="Mml23\MmlCm\MailAddress.cs" />
+    <Compile Include="Mml23\MmlContent.cs" />
+    <Compile Include="Mml23\MmlDocumentInfo.cs" />
+    <Compile Include="Mml23\MmlDp\Department.cs" />
+    <Compile Include="Mml23\MmlFc\Facility.cs" />
+    <Compile Include="Mml23\MmlGroupId.cs" />
+    <Compile Include="Mml23\MmlHeader.cs" />
+    <Compile Include="Mml23\MmlHi\HealthInsurance.cs" />
+    <Compile Include="Mml23\MmlHi\InsuranceClass.cs" />
+    <Compile Include="Mml23\MmlHi\PublicInsuranceItem.cs" />
+    <Compile Include="Mml23\MmlModuleItem.cs" />
+    <Compile Include="Mml23\MmlNm\Name.cs" />
+    <Compile Include="Mml23\MmlParentId.cs" />
+    <Compile Include="Mml23\MmlPh\Phone.cs" />
+    <Compile Include="Mml23\MmlPi\PatientModule.cs" />
+    <Compile Include="Mml23\MmlPsi\PersonalizedInfo.cs" />
+    <Compile Include="Mml23\MmlRd\Category.cs" />
+    <Compile Include="Mml23\MmlRd\Diagnosis.cs" />
+    <Compile Include="Mml23\MmlRd\DiagnosisItem.cs" />
+    <Compile Include="Mml23\MmlRd\OutcomeItem.cs" />
+    <Compile Include="Mml23\MmlRd\RegisteredDiagnosisModule.cs" />
+    <Compile Include="Mml23\MmlReader.cs" />
+    <Compile Include="Mml23\MmlSc\Department.cs" />
+    <Compile Include="Mml23\MmlSc\Facility.cs" />
+    <Compile Include="Mml23\MmlSc\License.cs" />
+    <Compile Include="Mml23\MmlSc\Person.cs" />
+    <Compile Include="Mml23\MmlTables.cs" />
+    <Compile Include="Mml23\MmlWriter.cs" />
+    <Compile Include="ParsonInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mml23\xsd\Address.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\BaseClinic.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\claimAmountModule.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\claimModule.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\Common.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\CreatorInfo.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\Department.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\Facility.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\FirstClinic.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\HealthInsurance.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\Lifestyle.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\MML23.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\Name.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\PatientInfo.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\PersonalizedInfo.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\Phone.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\ProgressCourse.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\Referral.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\RegisteredDiagnosis.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\report.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\Security.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\Summary.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\Surgery.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mml23\xsd\test.xsd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mml23\Table\MML23Table.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

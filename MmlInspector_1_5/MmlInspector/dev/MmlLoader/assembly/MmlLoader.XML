@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MmlLoader</name>
+    </assembly>
+    <members>
+        <member name="T:Yos731.MmlLoader.MmlLoaderException">
+            <summary>
+            MMLドキュメント読み込みプラグインモジュールで発生した例外を表します。
+            </summary>
+        </member>
+        <member name="M:Yos731.MmlLoader.MmlLoaderException.#ctor(System.String,System.Exception)">
+            <summary>
+            MmlLoaderExceptionクラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="message">例外メッセージ</param>
+            <param name="innerException">内部例外</param>
+        </member>
+        <member name="T:Yos731.MmlLoader.IMmlLoader">
+            <summary>
+            MMLドキュメント読み込みプラグインモジュールのプラグインインタフェースのメソッドを定義します。
+            </summary>
+        </member>
+        <member name="M:Yos731.MmlLoader.IMmlLoader.Load(System.String@,System.String@)">
+            <summary>
+            MMLドキュメントを読み込みます。
+            </summary>
+            <param name="mml">読み込んだMMLドキュメント</param>
+            <param name="description">MMLドキュメントの説明文字列</param>
+            <returns>読み込みに成功した場合はtrue、それ以外の場合はfalse</returns>
+        </member>
+    </members>
+</doc>

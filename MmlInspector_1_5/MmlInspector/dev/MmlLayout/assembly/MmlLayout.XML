@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MmlLayout</name>
+    </assembly>
+    <members>
+        <member name="T:Yos731.MmlLayout.ShowMmlDocumentHandler">
+            <summary>
+            MMLドキュメントを構成するタグのXMLを表示する場合に呼び出されるコールバックメソッドを参照します。
+            </summary>
+            <param name="mmlTag">表示するMMLのタグ</param>
+        </member>
+        <member name="T:Yos731.MmlLayout.IMmlLayout">
+            <summary>
+            MMLドキュメントレイアウトプラグインモジュールのプラグインインタフェースのメソッドを定義します。
+            </summary>
+        </member>
+        <member name="M:Yos731.MmlLayout.IMmlLayout.getMmlModule">
+            <summary>
+            このMMLドキュメントレイアウトプラグインモジュールが対応するMMLコンテンツモジュールを取得します。
+            </summary>
+            <returns>MMLコンテンツモジュールの識別文字列</returns>
+        </member>
+        <member name="M:Yos731.MmlLayout.IMmlLayout.getLayoutName">
+            <summary>
+            このMMLドキュメントレイアウトプラグインモジュールの表示レイアウトのレイアウト名称を取得します。
+            </summary>
+            <returns>レイアウト名称</returns>
+        </member>
+        <member name="M:Yos731.MmlLayout.IMmlLayout.render(System.Xml.Linq.XElement)">
+            <summary>
+            MMLドキュメントをレイアウトします。
+            </summary>
+            <param name="mml">表示対象のMMLドキュメントのタグ。このMMLドキュメントレイアウトプラグインモジュールの対象がMmlHeaderの場合は&gt;MmlHeader&lt;タグ、MMLコンテンツモジュールの場合は&gt;section&lt;タグ。</param>
+            <returns>Canvasオブジェクト</returns>
+        </member>
+        <member name="E:Yos731.MmlLayout.IMmlLayout.ShowMmlDocument">
+            <summary>
+            MMLドキュメントを構成するタグのXMLを表示する場合に発生します。
+            </summary>
+        </member>
+        <member name="T:Yos731.MmlLayout.MmlLayoutException">
+            <summary>
+            MMLドキュメント表示プラグインモジュールで発生した例外を表します。
+            </summary>
+        </member>
+        <member name="M:Yos731.MmlLayout.MmlLayoutException.#ctor(System.String,System.Exception)">
+            <summary>
+            MmlLayoutExceptionクラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="message">例外メッセージ</param>
+            <param name="innerException">内部例外</param>
+        </member>
+    </members>
+</doc>

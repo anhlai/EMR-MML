@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="EUC-JP" ?>
+<Mml version="2.3" createDate="2009-03-09T13:15:58" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mmlCm="http://www.medxml.net/MML/SharedComponent/Common/1.0" xmlns:mmlNm="http://www.medxml.net/MML/SharedComponent/Name/1.0" xmlns:mmlFc="http://www.medxml.net/MML/SharedComponent/Facility/1.0" xmlns:mmlDp="http://www.medxml.net/MML/SharedComponent/Department/1.0" xmlns:mmlAd="http://www.medxml.net/MML/SharedComponent/Address/1.0" xmlns:mmlPh="http://www.medxml.net/MML/SharedComponent/Phone/1.0" xmlns:mmlPsi="http://www.medxml.net/MML/SharedComponent/PersonalizedInfo/1.0" xmlns:mmlCi="http://www.medxml.net/MML/SharedComponent/CreatorInfo/1.0" xmlns:mmlPi="http://www.medxml.net/MML/ContentModule/PatientInfo/1.0" xmlns:mmlBc="http://www.medxml.net/MML/ContentModule/BaseClinic/1.0" xmlns:mmlFcl="http://www.medxml.net/MML/ContentModule/FirstClinic/1.0" xmlns:mmlHi="http://www.medxml.net/MML/ContentModule/HealthInsurance/1.1" xmlns:mmlLs="http://www.medxml.net/MML/ContentModule/L!
+ ifestyle/1.0" xmlns:mmlPc="http://www.medxml.net/MML/ContentModule/ProgressCourse/1.0" xmlns:mmlRd="http://www.medxml.net/MML/ContentModule/RegisteredDiagnosis/1.0" xmlns:mmlSg="http://www.medxml.net/MML/ContentModule/Surgery/1.0" xmlns:mmlSm="http://www.medxml.net/MML/ContentModule/Summary/1.0" xmlns:mmlLb="http://www.medxml.net/MML/ContentModule/test/1.0" xmlns:mmlRp="http://www.medxml.net/MML/ContentModule/report/1.0" xmlns:mmlRe="http://www.medxml.net/MML/ContentModule/Referral/1.0" xmlns:mmlSc="http://www.medxml.net/MML/SharedComponent/Security/1.0" xmlns:claim="http://www.medxml.net/claim/claimModule/2.1" xmlns:claimA="http://www.medxml.net/claim/claimAmountModule/2.1">       
+    <MmlHeader>
+        <mmlCi:CreatorInfo>
+            <mmlPsi:PersonalizedInfo>
+                <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                    0000000
+                </mmlCm:Id>
+                <mmlPsi:personName>
+                    <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                        <mmlNm:fullname>§™§ÅE´°°¬¿œ∫</mmlNm:fullname>
+                    </mmlNm:Name>
+                </mmlPsi:personName>
+                <mmlFc:Facility>
+                    <mmlFc:name mmlFc:repCode="I" mmlFc:tableId="MML0025">
+                        §™§ÅE´ø«Œ≈ΩÅE
+                    </mmlFc:name>
+                    <mmlCm:Id mmlCm:type="insurance" mmlCm:tableId="MML0027">
+<!-- =================================== -->
+<!--  ∞ÂŒ≈µ°¥ÿID: JPN000000000000 (…¨ø‹) -->
+<!-- =================================== -->
+                        JPN000000000000
+                    </mmlCm:Id>
+                </mmlFc:Facility>
+                <mmlDp:Department>
+                    <mmlDp:name mmlDp:repCode="I" mmlDp:tableId="MML0025">
+                        ∆‚≤ 
+                    </mmlDp:name>
+                    <mmlCm:Id mmlCm:type="medical" mmlCm:tableId="MML0029">
+<!-- ================ -->
+<!--  ø«Œ≈≤ : 01 ∆‚≤  -->
+<!-- ================ -->
+                        01
+                    </mmlCm:Id>
+                </mmlDp:Department>
+                <mmlPsi:addresses>
+                    <mmlAd:Address mmlAd:repCode="I" mmlAd:tableId="MML0025">
+                        <mmlAd:full>
+                            ≈ÅE˛≈‘ ∏µ˛∂Ë«Úª≥£π£π£π
+                        </mmlAd:full>
+                        <mmlAd:zip>
+                            999-9999
+                        </mmlAd:zip>
+                    </mmlAd:Address>
+                </mmlPsi:addresses>
+            </mmlPsi:PersonalizedInfo>
+            <mmlCi:creatorLicense mmlCi:tableId="MML0026">
+                doctor
+            </mmlCi:creatorLicense>
+        </mmlCi:CreatorInfo>
+        <masterId>
+            <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+<!-- ======================== -->
+<!--  ¥µº‘»÷πÅE 45622 (…¨ø‹)  -->
+<!-- ======================== -->
+                45622
+            </mmlCm:Id>
+        </masterId>
+        <toc>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/Common/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/Name/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/Facility/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/Department/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/Address/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/Phone/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/PersonalizedInfo/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/CreatorInfo/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/ContentModule/PatientInfo/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/ContentModule/HealthInsurance/1.1</tocItem>
+            <tocItem>http://www.medxml.net/claim/claimModule/2.1</tocItem>
+        </toc>
+        <encryptInfo>no encryption</encryptInfo>
+    </MmlHeader>
+    <MmlBody>
+<!-- ======================= -->
+<!--  ¥µº‘æ Û•‚•∏•Â°º•ÅE*)  -->
+<!--  (∆√§À…¨Õ◊§»§∑§ §§)     -->
+<!-- ======================= -->
+        <MmlModuleItem>
+            <docInfo contentModuleType="patientInfo">
+                <securityLevel>
+                    <accessRight permit="all" />
+                </securityLevel>
+                <title>Data of Regist</title>
+                <docId>
+                    <uid>eff41b48-9051-11d9-8a98-00094109afdf</uid>
+                </docId>
+                <confirmDate>2009-03-09</confirmDate>
+                <mmlCi:CreatorInfo>
+                    <mmlPsi:PersonalizedInfo>
+                        <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                            0000000
+                        </mmlCm:Id>
+                        <mmlPsi:personName>
+                            <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                                <mmlNm:fullname>§™§ÅE´°°¬¿œ∫</mmlNm:fullname>
+                            </mmlNm:Name>
+                        </mmlPsi:personName>
+                        <mmlFc:Facility>
+                            <mmlFc:name mmlFc:repCode="I" mmlFc:tableId="MML0025">
+                                §™§ÅE´ø«Œ≈ΩÅE
+                            </mmlFc:name>
+                            <mmlCm:Id mmlCm:type="insurance" mmlCm:tableId="MML0027">
+                                JPN000000000000
+                            </mmlCm:Id>
+                        </mmlFc:Facility>
+                        <mmlPsi:addresses>
+                            <mmlAd:Address mmlAd:repCode="I" mmlAd:tableId="MML0025">
+                                <mmlAd:full>
+                                    ≈ÅE˛≈‘ ∏µ˛∂Ë«Úª≥£π£π£π
+                                </mmlAd:full>
+                                <mmlAd:zip>
+                                    999-9999
+                                </mmlAd:zip>
+                            </mmlAd:Address>
+                        </mmlPsi:addresses>
+                    </mmlPsi:PersonalizedInfo>
+                    <mmlCi:creatorLicense mmlCi:tableId="MML0026">
+                        doctor
+                    </mmlCi:creatorLicense>
+                </mmlCi:CreatorInfo>
+                <extRefs />
+            </docInfo>
+            <content>
+                <mmlPi:PatientModule>
+                    <mmlPi:uniqueInfo>
+                        <mmlPi:masterId>
+                            <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                                00148
+                            </mmlCm:Id>
+                        </mmlPi:masterId>
+                    </mmlPi:uniqueInfo>
+                    <mmlPi:personName>
+                        <mmlNm:Name mmlNm:repCode="P" mmlNm:tableId="MML0025">
+                            <mmlNm:fullname>•‰•ﬁ•¿°°•ø•˙¡¶</mmlNm:fullname>
+                        </mmlNm:Name>
+                        <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                            <mmlNm:fullname>ª≥≈ƒ°°¬¿œ∫</mmlNm:fullname>
+                        </mmlNm:Name>
+                    </mmlPi:personName>
+                    <mmlPi:birthday>1932-12-05</mmlPi:birthday>
+                    <mmlPi:sex>male</mmlPi:sex>
+                    <mmlPi:death>false</mmlPi:death>
+                </mmlPi:PatientModule>
+            </content>
+        </MmlModuleItem>
+<!-- =========================== -->
+<!--  ∑ÚπØ ›∏±æ Û•‚•∏•Â°º•ÅE    -->
+<!--  claim:insuranceUid §Ú¿ﬂƒÅE -->
+<!--  §∑§∆§§§ §§æÅEÁ§« ›∏±æ Û§ÅE-->
+<!--  ¡˜øÆ§∑§ø§§æÅEÁ§œ…¨ø‹       -->
+<!-- =========================== -->
+        <MmlModuleItem>
+            <docInfo contentModuleType="healthInsurance">
+                <securityLevel>
+                    <accessRight permit="all" />
+                </securityLevel>
+                <title>Regist </title>
+                <docId>
+                    <uid>efff5058-9051-11d9-83d7-00094109afdf</uid>
+                </docId>
+                <confirmDate>2009-03-09</confirmDate>
+                <mmlCi:CreatorInfo>
+                    <mmlPsi:PersonalizedInfo>
+                        <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                            0000000
+                        </mmlCm:Id>
+                        <mmlPsi:personName>
+                            <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                                <mmlNm:fullname>§™§ÅE´°°¬¿œ∫</mmlNm:fullname>
+                            </mmlNm:Name>
+                        </mmlPsi:personName>
+                        <mmlFc:Facility>
+                            <mmlFc:name mmlFc:repCode="I" mmlFc:tableId="MML0025">
+                                §™§ÅE´ø«Œ≈ΩÅE
+                            </mmlFc:name>
+                            <mmlCm:Id mmlCm:type="insurance" mmlCm:tableId="MML0027">
+                                JPN000000000000
+                            </mmlCm:Id>
+                        </mmlFc:Facility>
+                        <mmlDp:Department>
+                            <mmlDp:name mmlDp:repCode="I" mmlDp:tableId="MML0025">
+                                ∆‚≤ 
+                            </mmlDp:name>
+                            <mmlCm:Id mmlCm:type="medical" mmlCm:tableId="MML0029">
+                                01
+                            </mmlCm:Id>
+                        </mmlDp:Department>
+                        <mmlPsi:addresses>
+                            <mmlAd:Address mmlAd:repCode="I" mmlAd:tableId="MML0025">
+                                <mmlAd:full>
+                                    ≈ÅE˛≈‘ ∏µ˛∂Ë«Úª≥£π£π£π
+                                </mmlAd:full>
+                                <mmlAd:zip>
+                                    999-9999
+                                </mmlAd:zip>
+                            </mmlAd:Address>
+                        </mmlPsi:addresses>
+                    </mmlPsi:PersonalizedInfo>
+                    <mmlCi:creatorLicense mmlCi:tableId="MML0026">
+                        doctor
+                    </mmlCi:creatorLicense>
+                </mmlCi:CreatorInfo>
+                <extRefs />
+            </docInfo>
+            <content>
+<!-- ===================================== -->
+<!--  πÒ ›+¿∫ø¿ƒÃ±°+∏∂«˙§Œ ›∏±¡»πÁ§ª§ŒæÅEÅE-->
+<!--  ºÁ ›∏±                               -->
+<!--     ›∏±ºÅEÃ  : 00 πÒ ›                -->
+<!--     ›∏±º‘»÷πÅE 320010                 -->
+<!--    µ≠πÅE     : ∏∂«ÅE                  -->
+<!--    »÷πÅE     : £±                     -->
+<!--    À‹øÕ≤»¬≤  : true À‹øÕ              -->
+<!--    ≥´ªœ∆ÅE   : 2004-04-01             -->
+<!--    Ω™Œª∆ÅE   : 9999-12-31             -->
+<!-- ===================================== -->
+                <mmlHi:HealthInsuranceModule mmlHi:countryType="JPN">
+                    <mmlHi:insuranceClass mmlHi:ClassCode="00" mmlHi:tableId="MML0031">
+                        πÒ ›
+                    </mmlHi:insuranceClass>
+                    <mmlHi:insuranceNumber>320010</mmlHi:insuranceNumber>
+                    <mmlHi:clientId>
+                        <mmlHi:group>∏∂«ÅE</mmlHi:group>
+                        <mmlHi:number>£±</mmlHi:number>
+                    </mmlHi:clientId>
+                    <mmlHi:familyClass>true</mmlHi:familyClass>
+                    <mmlHi:startDate>2004-04-01</mmlHi:startDate>
+                    <mmlHi:expiredDate>9999-12-31</mmlHi:expiredDate>
+                    <mmlHi:paymentOutRatio>0.00</mmlHi:paymentOutRatio>
+                    <mmlHi:publicInsurance>
+<!-- ========================= -->
+<!--  ∏¯»ÅE                    -->
+<!--    ∏¯»Ò§ŒºÅEÅE ¿∫ø¿ƒÃ±°   -->
+<!--    …È√¥º‘»÷πÅE 21123450   -->
+<!--    ºıµÅE‘»÷πÅE 1234566    -->
+<!--    ≥´ªœ∆ÅE   : 2006-04-01 -->
+<!--    Ω™Œª∆ÅE   : 9999-12-31 -->
+<!-- ========================= -->
+                        <mmlHi:publicInsuranceItem mmlHi:priority="1">
+                            <mmlHi:providerName>¿∫ø¿ƒÃ±°</mmlHi:providerName>
+                            <mmlHi:provider>21123450</mmlHi:provider>
+                            <mmlHi:recipient>1234566</mmlHi:recipient>
+                            <mmlHi:startDate>2006-04-01</mmlHi:startDate>
+                            <mmlHi:expiredDate>9999-12-31</mmlHi:expiredDate>
+                            <mmlHi:paymentRatio mmlHi:ratioType="ratio">0.10</mmlHi:paymentRatio>
+                        </mmlHi:publicInsuranceItem>
+<!-- ========================= -->
+<!--  ∏¯»ÅE                    -->
+<!--    ∏¯»Ò§ŒºÅEÅE ∏∂«˙∞ÅEÃ   -->
+<!--    …È√¥º‘»÷πÅE 19123454   -->
+<!--    ºıµÅE‘»÷πÅE 1432566    -->
+<!--    ≥´ªœ∆ÅE   : 2004-04-01 -->
+<!--    Ω™Œª∆ÅE   : 9999-12-31 -->
+<!-- ========================= -->
+                        <mmlHi:publicInsuranceItem mmlHi:priority="2">
+                            <mmlHi:providerName>∏∂«˙∞ÅEÃ</mmlHi:providerName>
+                            <mmlHi:provider>19123454</mmlHi:provider>
+                            <mmlHi:recipient>1432566</mmlHi:recipient>
+                            <mmlHi:startDate>2004-04-01</mmlHi:startDate>
+                            <mmlHi:expiredDate>9999-12-31</mmlHi:expiredDate>
+                            <mmlHi:paymentRatio mmlHi:ratioType="ratio">0.00</mmlHi:paymentRatio>
+                        </mmlHi:publicInsuranceItem>
+                    </mmlHi:publicInsurance>
+                </mmlHi:HealthInsuranceModule>
+            </content>
+        </MmlModuleItem>
+<!-- ======================== -->
+<!--  ø«√«Õ˙ŒÚæ Û•‚•∏•Â°º•ÅE -->
+<!-- ======================== -->
+       <MmlModuleItem>
+            <docInfo contentModuleType="registeredDiagnosis">
+                <securityLevel>
+                    <accessRight permit="all" />
+                </securityLevel>
+                <title>Regist </title>
+                <docId>
+                    <uid>eff41b48-9051-11d9-8a98-00094109afdf</uid>
+                </docId>
+                <confirmDate>2009-03-09</confirmDate>
+                <mmlCi:CreatorInfo>
+                    <mmlPsi:PersonalizedInfo>
+                        <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                            0000000
+                        </mmlCm:Id>
+                        <mmlPsi:personName>
+                            <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                                <mmlNm:fullname>§™§ÅE´°°¬¿œ∫</mmlNm:fullname>
+                            </mmlNm:Name>
+                        </mmlPsi:personName>
+                        <mmlFc:Facility>
+                            <mmlFc:name mmlFc:repCode="I" mmlFc:tableId="MML0025">
+                                §™§ÅE´ø«Œ≈ΩÅE
+                            </mmlFc:name>
+                            <mmlCm:Id mmlCm:type="insurance" mmlCm:tableId="MML0027">
+                                JPN000000000000
+                            </mmlCm:Id>
+                        </mmlFc:Facility>
+                        <mmlPsi:addresses>
+                            <mmlAd:Address mmlAd:repCode="I" mmlAd:tableId="MML0025">
+                                <mmlAd:full>
+                                    ≈ÅE˛≈‘ ∏µ˛∂Ë«Úª≥£π£π£π
+                                </mmlAd:full>
+                                <mmlAd:zip>
+                                    999-9999
+                                </mmlAd:zip>
+                            </mmlAd:Address>
+                        </mmlPsi:addresses>
+                    </mmlPsi:PersonalizedInfo>
+                    <mmlCi:creatorLicense mmlCi:tableId="MML0026">
+                        doctor
+                    </mmlCi:creatorLicense>
+                </mmlCi:CreatorInfo>
+                <extRefs />
+            </docInfo>
+            <content>
+<!-- =========================================== -->
+<!--  ∞ÅE¢…¬Ãæ¿ﬂƒÅE                              -->
+<!--    …¬Ãæ•≥°º•…: 4042.4273006 »Ø∫˚‹≠ø¥Àº∫Ÿ∆∞  -->
+<!--    ºÁ…¬Ãæ    : mainDiagnosis                -->
+<!--    ≥´ªœ∆ÅE   : 2009-04-14                   -->
+<!-- =========================================== -->
+                <mmlRd:RegisteredDiagnosisModule>
+                    <mmlRd:diagnosis mmlRd:code="4042.4273006" mmlRd:system="ORCA">»Ø∫˚‹≠ø¥Àº∫Ÿ∆∞</mmlRd:diagnosis>
+                    <mmlRd:categories>
+                        <mmlRd:category mmlRd:tableId="MML0012">mainDiagnosis</mmlRd:category>
+                    </mmlRd:categories>
+                    <mmlRd:startDate>2009-04-14</mmlRd:startDate>
+                    <mmlRd:firstEncounterDate>1999-01-13</mmlRd:firstEncounterDate>
+                </mmlRd:RegisteredDiagnosisModule>
+            </content>
+        </MmlModuleItem>
+       <MmlModuleItem>
+            <docInfo contentModuleType="registeredDiagnosis">
+                <securityLevel>
+                    <accessRight permit="all" />
+                </securityLevel>
+                <title>Regist </title>
+                <docId>
+                    <uid>eff41b48-9051-11d9-8a98-00094109afdf</uid>
+                </docId>
+                <confirmDate>2009-03-09</confirmDate>
+                <mmlCi:CreatorInfo>
+                    <mmlPsi:PersonalizedInfo>
+                        <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                            0000000
+                        </mmlCm:Id>
+                        <mmlPsi:personName>
+                            <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                                <mmlNm:fullname>§™§ÅE´°°¬¿œ∫</mmlNm:fullname>
+                            </mmlNm:Name>
+                        </mmlPsi:personName>
+                        <mmlFc:Facility>
+                            <mmlFc:name mmlFc:repCode="I" mmlFc:tableId="MML0025">
+                                §™§ÅE´ø«Œ≈ΩÅE
+                            </mmlFc:name>
+                            <mmlCm:Id mmlCm:type="insurance" mmlCm:tableId="MML0027">
+                                JPN000000000000
+                            </mmlCm:Id>
+                        </mmlFc:Facility>
+                        <mmlPsi:addresses>
+                            <mmlAd:Address mmlAd:repCode="I" mmlAd:tableId="MML0025">
+                                <mmlAd:full>
+                                    ≈ÅE˛≈‘ ∏µ˛∂Ë«Úª≥£π£π£π
+                                </mmlAd:full>
+                                <mmlAd:zip>
+                                    999-9999
+                                </mmlAd:zip>
+                            </mmlAd:Address>
+                        </mmlPsi:addresses>
+                    </mmlPsi:PersonalizedInfo>
+                    <mmlCi:creatorLicense mmlCi:tableId="MML0026">
+                        doctor
+                    </mmlCi:creatorLicense>
+                </mmlCi:CreatorInfo>
+                <extRefs />
+            </docInfo>
+            <content>
+<!-- =======================================  -->
+<!--  œ¢∑ÅE¬Ãæ¿ﬂƒÅE                           -->
+<!--    …¬Ãæ      : ¥∂¿˜¿≠∑ÅEÅEÅE             -->
+<!--        •≥°º•…: 3023               ¥∂¿˜¿≠ -->
+<!--        •≥°º•…: 3723001            ∑ÅEÅEÅE-->
+<!--      category: suspectedDiagnosis µø§§   -->
+<!--    ºÁ…¬Ãæ    : mainDiagnosis             -->
+<!--    ≥´ªœ∆ÅE   : 2009-02-16                -->
+<!--    Ω™Œª∆ÅE   : 2009-04-14                -->
+<!--    ≈æµ¢∂Ë ¨  : fullRecoverd       º£§ÅE  --> 
+<!-- ======================================== -->
+                <mmlRd:RegisteredDiagnosisModule>
+                   <mmlRd:diagnosisContents>
+                      <mmlRd:dxItem>
+                        <mmlRd:name mmlRd:code="3023" mmlRd:system="ORCA">
+                             ¥∂¿˜¿≠
+                        </mmlRd:name>
+                      </mmlRd:dxItem>
+                      <mmlRd:dxItem>
+                        <mmlRd:name mmlRd:code="3723001" mmlRd:system="ORCA">
+                             ∑ÅEÅEÅE
+                        </mmlRd:name>
+                      </mmlRd:dxItem>
+                   </mmlRd:diagnosisContents>
+                  <mmlRd:categories>
+                      <mmlRd:category mmlRd:tableId="MML0015">suspectedDiagnosis</mmlRd:category>
+                  </mmlRd:categories>
+                <mmlRd:startDate>2009-02-16</mmlRd:startDate>
+                <mmlRd:endDate>2009-04-14</mmlRd:endDate>
+                <mmlRd:outcome >fullRecoverd</mmlRd:outcome>
+                </mmlRd:RegisteredDiagnosisModule>
+            </content>
+        </MmlModuleItem>
+<!-- ==================== -->
+<!--  ÕΩÃÛ¿¡µ·•‚•∏•Â°º•ÅE -->
+<!-- ==================== -->
+        <MmlModuleItem>
+            <docInfo contentModuleType="claim">
+                <securityLevel>
+                    <accessRight permit="all" />
+                </securityLevel>
+                <title>Regist </title>
+                <docId>
+                    <uid>eff4ccf0-9051-11d9-8b88-00094109afdf</uid>
+                </docId>
+                <confirmDate>2009-03-09</confirmDate>
+                <mmlCi:CreatorInfo>
+                    <mmlPsi:PersonalizedInfo>
+                        <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+<!-- ==================================== -->
+<!--  •…•Ø•ø°º•≥°º•…: 10001 §™§ÅE´°°¬¿œ∫  -->
+<!--          °÷1°◊+ 0001 (•…•Ø•ø•≥°º•…)  -->
+<!-- ==================================== -->
+                            10001
+                        </mmlCm:Id>
+                        <mmlPsi:personName>
+                            <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                                <mmlNm:fullname>§™§ÅE´°°¬¿œ∫</mmlNm:fullname>
+                            </mmlNm:Name>
+                        </mmlPsi:personName>
+                        <mmlFc:Facility>
+                            <mmlFc:name mmlFc:repCode="I" mmlFc:tableId="MML0025">
+                                §™§ÅE´ø«Œ≈ΩÅE
+                            </mmlFc:name>
+                            <mmlCm:Id mmlCm:type="insurance" mmlCm:tableId="MML0027">
+                                JPN000000000000
+                            </mmlCm:Id>
+                        </mmlFc:Facility>
+                        <mmlDp:Department>
+                            <mmlDp:name mmlDp:repCode="I" mmlDp:tableId="MML0025">
+                                ∆‚≤ 
+                            </mmlDp:name>
+                            <mmlCm:Id mmlCm:type="medical" mmlCm:tableId="MML0029">
+                                01
+                            </mmlCm:Id>
+                        </mmlDp:Department>
+                        <mmlPsi:addresses>
+                            <mmlAd:Address mmlAd:repCode="I" mmlAd:tableId="MML0025">
+                                <mmlAd:full>
+                                    ≈ÅE˛≈‘ ∏µ˛∂Ë«Úª≥£π£π£π
+                                </mmlAd:full>
+                                <mmlAd:zip>
+                                    999-9999
+                                </mmlAd:zip>
+                            </mmlAd:Address>
+                        </mmlPsi:addresses>
+                    </mmlPsi:PersonalizedInfo>
+                    <mmlCi:creatorLicense mmlCi:tableId="MML0026">
+                        doctor
+                    </mmlCi:creatorLicense>
+                </mmlCi:CreatorInfo>
+                <extRefs />
+            </docInfo>
+            <content>
+                <claim:ClaimModule>
+                    
+<!-- ====================================== -->
+<!--  ø«Œ≈«Ø∑˚‚ÅE 2009-04-14 performTime    -->
+<!--  ∆˛≥∞∂Ë ¨  : ≥∞ÕÅE      admitFlag      -->
+<!--  ª˛¥÷≥∞∂Ë ¨: ÃÅE÷°¶¡·ƒ´≤√ªª  timeClass -->
+<!-- ====================================== -->
+                <claim:information claim:status="perform" claim:performTime="2009-04-14T19:13:17" claim:insuranceUid="efff5058-9051-11d9-83d7-00094109afdf" claim:admitFlag="false" claim:timeClass = "8">
+                </claim:information>
+<!-- ======================================= -->
+<!--  ø«ª°Œ¡: 110 111000110 ΩÈø«° ø«Œ≈ΩÍ°À   -->
+<!-- ======================================= -->
+<claim:bundle claim:classCode="110" claim:classCodeId="Claim007">
+                        <claim:className>ø«Œ≈Œ¡</claim:className>
+                        <claim:bundleNumber>1</claim:bundleNumber>
+                        <claim:item claim:subclassCode="0" claim:subclassCodeId="Claim003" claim:code="111000110" claim:tableId="tbl_tensu">
+                            <claim:name>ΩÈø«° ø«Œ≈ΩÍ°À</claim:name>
+                        </claim:item>
+                    </claim:bundle>
+<!-- =========================== -->
+<!--  ∆‚…˛ÃÙ∫ﬁ: 211 ° ±°∆‚ΩË ˝°À -->
+<!-- =========================== -->
+                    <claim:bundle claim:classCode="211" claim:classCodeId="Claim007">
+                        <claim:className>≈ÅEÙ∆‚…˛</claim:className>
+                        <claim:bundleNumber>10</claim:bundleNumber>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="612140711" claim:tableId="tbl_tensu">
+                            <claim:name>•ø• •»•ÅEÅE˚£≤°•£µ°°£≤°•£µ£˙øÅE/claim:name>
+                            <claim:number claim:numberCode="10" claim:numberCodeId="Claim004">1</claim:number>
+                        </claim:item>
+<!--  Õ—À°: 001000106 £±∆ÅE±≤Ûƒ´ø©∏Â§À -->
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="001000106" claim:tableId="tbl_tensu">
+                            <claim:name>£±∆ÅE±≤Ûƒ´ø©∏Â§À</claim:name>
+                        </claim:item>
+                    </claim:bundle>
+                    <claim:bundle claim:classCode="211" claim:classCodeId="Claim007">
+                        <claim:className>≈ÅEÙ∆‚…˛</claim:className>
+                        <claim:bundleNumber>10</claim:bundleNumber>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="613960019" claim:tableId="tbl_tensu">
+                            <claim:name>•¿•™•À°º•ÅE≤°•£µ£˙øÅE/claim:name>
+                            <claim:number claim:numberCode="10" claim:numberCodeId="Claim004">1.5</claim:number>
+                        </claim:item>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="001000305" claim:tableId="tbl_tensu">
+                            <claim:name>£±∆ÅE≥≤ÛÀËø©¡∞§À</claim:name>
+                        </claim:item>
+                    </claim:bundle>
+<!-- ============== -->
+<!--  ≤Ë¡ÅE«√«: 700 -->
+<!-- ============== -->
+                    <claim:bundle claim:classCode="700" claim:classCodeId="Claim007">
+                        <claim:className>≤Ë¡ÅE«√«</claim:className>
+                        <claim:bundleNumber>1</claim:bundleNumber>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="170000310" claim:tableId="tbl_tensu">
+                            <claim:name>∆©ªÅE«√«</claim:name>
+                        </claim:item>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="002000026" claim:tableId="tbl_tensu">
+                            <claim:name>∞ﬂ</claim:name>
+                        </claim:item>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="170002110" claim:tableId="tbl_tensu">
+                            <claim:name>¬§±∆∫ﬁª»Õ—ª£±∆° ª£±∆°À</claim:name>
+                        </claim:item>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="170000810" claim:tableId="tbl_tensu">
+                            <claim:name>¬§±∆∫ﬁª»Õ—ª£±∆§ŒºÃøøø«√«</claim:name>
+                        </claim:item>
+<!-- ================================= -->
+<!--  •’•£•ÅE‡•≥°º•…: 700080000 ªÕ•ƒ¿⁄ -->
+<!-- ================================= -->
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="700080000" claim:tableId="tbl_tensu">
+                            <claim:name>ªÕ•ƒ¿⁄</claim:name>
+<!-- ================ -->
+<!--  ªÕ•ƒ¿⁄ 3ÀÅE ¨≤ÅE-->
+<!-- ================ -->
+                            <claim:number claim:numberCode="10" claim:numberCodeId="Claim004">3-2</claim:number>
+                        </claim:item>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="170007530" claim:tableId="tbl_tensu">
+                            <claim:name>•π•›•√•»ª£±∆° ø«√«°¶ª£±∆°À</claim:name>
+                        </claim:item>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="700080000" claim:tableId="tbl_tensu">
+                            <claim:name>ªÕ•ƒ¿⁄</claim:name>
+                            <claim:number claim:numberCode="10" claim:numberCodeId="Claim004">2</claim:number>
+                        </claim:item>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="617210049" claim:tableId="tbl_tensu">
+                            <claim:name>•–•ÅEÆ•Û£”•æ•ÅE≥πÊ°°£±£∞£∞°ÅE/claim:name>
+                            <claim:number claim:numberCode="10" claim:numberCodeId="Claim004">300</claim:number>
+                        </claim:item>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="617210050" claim:tableId="tbl_tensu">
+                            <claim:name>•–•ÅEÆ•Û»ØÀ¢˘Œ≥</claim:name>
+                            <claim:number claim:numberCode="10" claim:numberCodeId="Claim004">6</claim:number>
+                        </claim:item>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="641240023" claim:tableId="tbl_tensu">
+                            <claim:name>•÷•π•≥•—•Û√˙ÿÕ±’°°£≤°Û£±£˙øÃ</claim:name>
+                            <claim:number claim:numberCode="10" claim:numberCodeId="Claim004">1</claim:number>
+                        </claim:item>
+                    </claim:bundle>
+<!-- =========================== -->
+<!--  ∆‚…˛ÃÙ∫ﬁ: •ª•√•»•≥°º•…¡˜øÆ -->
+<!-- =========================== -->
+                    <claim:bundle claim:classCode="211" claim:classCodeId="Claim007">
+                        <claim:className>•ª•√•»¡˜øÆ</claim:className>
+                        <claim:bundleNumber>1</claim:bundleNumber>
+<!-- ==================== -->
+<!--  •ª•√•»•≥°º•…:P01022 -->
+<!-- ==================== -->
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="P01022" claim:tableId="tbl_tensu">
+                            <claim:name>≤÷ ¥æ…•ª•√•»</claim:name>
+                            <claim:number claim:numberCode="10" claim:numberCodeId="Claim004">1</claim:number>
+                        </claim:item>
+                    </claim:bundle>
+<!-- =============================== -->
+<!--  ºÅE—: 500 ° •≥•·•Û•»∫π§∑π˛§ﬂ°À -->
+<!-- =============================== -->
+                    <claim:bundle claim:classCode="500" claim:classCodeId="Claim007">
+                        <claim:className>ºÅE—</claim:className>
+                        <claim:bundleNumber>1</claim:bundleNumber>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="150003110" claim:tableId="tbl_tensu">
+                            <claim:name>»È…Ê°¢»È≤ºº·Á≈¶Ω–Ω—° œ™Ω–…Ù°À° ƒπ∑¬£≤£„£˙Ë§À˛°À</claim:name>
+                            <claim:number claim:numberCode="10" claim:numberCodeId="Claim004">1</claim:number>
+                        </claim:item>
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="641210099" claim:tableId="tbl_tensu">
+                            <claim:name>•≠•∑•˙¡´•§•Û√˙ÿÕ±’£±°ÅE/claim:name>
+                            <claim:number claim:numberCode="10" claim:numberCodeId="Claim004">3</claim:number>
+                        </claim:item>
+<!-- =================== -->
+<!--  ºÅE—∆ÅE ºÅE—£±£µ∆ÅE-->
+<!-- =================== -->
+                        <claim:item claim:subclassCodeId="Claim003" claim:code="840000042" claim:tableId="tbl_tensu">
+                            <claim:name>ºÅE—°˚∆ÅE/claim:name>
+                            <claim:number claim:numberCode="10" claim:numberCodeId="Claim004">15</claim:number>
+                        </claim:item>
+                    </claim:bundle>
+                </claim:ClaimModule>
+            </content>
+        </MmlModuleItem>
+    </MmlBody>
+</Mml>

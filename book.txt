@@ -1,0 +1,3 @@
+http://www.medxml.net/mml23/part2/
+https://github.com/skoba/mml
+http://osdn.jp/projects/emrtools/scm/hg/emrtools/blobs

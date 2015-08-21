@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MmlReceiver</name>
+    </assembly>
+    <members>
+        <member name="T:Yos731.MmlReceiver.IMmlReceiver">
+            <summary>
+            MMLドキュメント受信プラグインモジュールのプラグインインタフェースのメソッドを定義します。
+            </summary>
+        </member>
+        <member name="M:Yos731.MmlReceiver.IMmlReceiver.Receive(System.Net.Sockets.Socket,System.String@)">
+            <summary>
+            MMLドキュメントを受信します。
+            </summary>
+            <param name="socket">通信を行うSocket</param>
+            <param name="mml">受信したMMLドキュメント</param>
+        </member>
+        <member name="T:Yos731.MmlReceiver.MmlReceiverException">
+            <summary>
+            MMLドキュメント受信プラグインモジュールで発生した例外を表します。
+            </summary>
+        </member>
+        <member name="M:Yos731.MmlReceiver.MmlReceiverException.#ctor(System.String,System.Exception)">
+            <summary>
+            MmlReceiverExceptionクラスの新しいインスタンスを初期化します。
+            </summary>
+            <param name="message">例外メッセージ</param>
+            <param name="innerException">内部例外</param>
+        </member>
+    </members>
+</doc>

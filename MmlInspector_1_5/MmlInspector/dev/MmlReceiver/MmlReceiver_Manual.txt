@@ -1,0 +1,115 @@
+☆☆☆ MML Inspector - MMLドキュメント受信プラグインモジュール開発説明書
+
+目次
+
+　1. はじめに
+　2. 実装方法
+　3. 配置方法
+　4. MmlReceiverアセンブリの説明
+　5. サンプル
+
+
+1. はじめに
+
+　MMLドキュメント受信プラグインモジュールは、MML InspectorがServer Modeにおいて、
+クライアントからMMLドキュメントを受信するために呼び出すモジュールです。
+Server Modeでは、1MMLドキュメント/1コネクションでクライアントと通信します。
+MMLドキュメント受信プラグインモジュールには、1MMLドキュメントを受信するための
+アプリケーションレベルの通信手順を実装します。MML InspectorがServer Modeで
+動作するためには、MMLドキュメント受信プラグインモジュールは必須になります。
+
+
+2. 実装方法
+
+　MMLドキュメント受信プラグインモジュールの形態は、プラグインインタフェース
+(IMmlReceiver)を実装した.NETクラスライブラリ(dll)になります。
+
+・Visual Studioを使用した場合
+　(1) 「クラスライブラリ」プロジェクトを作成します。
+　(2) 参照設定に、MmlReceiverアセンブリ(dev\MmlReceiver\assembly\MmlReceiver.dll)を
+      追加します。
+　(3) クラスを作成し、IMmlReceiverインタフェースを実装します。
+　    ※IMmlReceiverを実装したクラスは、同一dll内に1個になるようにしてください。
+　(4) IMmlReceiver.Receiveメソッドを作成します。
+
+
+3. 配置方法
+
+　作成したMMLドキュメント受信プラグインモジュールは、MML Inspectorの
+実行ファイル(MmlInspector.exe)と同じディレクトリに移動またはコピーします。
+
+　MML Inspectorは、MmlInspector.exeが存在するディレクトリ内からMMLドキュメント
+受信プラグインモジュールを検出し、適用します。ディレクトリ内に複数の
+MMLドキュメント受信プラグインモジュールが存在する場合は、いずれか1個が
+適用されます。
+
+　MML InspectorがMMLドキュメント受信プラグインモジュールを適用した場合、
+画面上部に「MML Receiver:」に続いて適用したMMLドキュメント受信プラグイン
+モジュールのファイル名を表示します。いずれのMMLドキュメント受信プラグイン
+モジュールも適用できなかった場合は、「MML Receiver: Not Found」が表示され、
+Server Modeは動作しません。
+
+
+4. MmlReceiverアセンブリの説明
+
+　MmlReceiverアセンブリには、以下のクラス、インタフェースが含まれています。
+
+[クラス]
+　MmlReceiverException … MMLドキュメント受信プラグインモジュールで
+　　　　　　　　　　　　　発生した例外を表します。
+
+[インタフェース]
+　IMmlReceiver … MMLドキュメント受信プラグインモジュールのプラグイン
+　　　　　　　　　インタフェースのメソッドを定義します。
+
+4.1 IMmlReceiver
+
+名前空間: Yos731.MmlReceiver
+構文: public interface IMmlReceiver
+メソッド:
+void Receive(Socket socket, out string mml)
+  socket … 通信に使用するSocketオブジェクト
+  mml … 読み込んだMMLドキュメント
+説明: 1個のMMLドキュメントを受信するアプリケーションレベルの通信手順を実装
+　　　します。処理中にエラーが発生した場合は、MmlReceiverException例外を
+　　　スローしてください。
+
+4.2 MmlReceiverException
+
+名前空間: Yos731.MmlReceiver
+構文: public class MmlReceiverException : Exception
+コンストラクタ:
+public MmlReceiverException(string message, Exception, innerException)
+  message … 現在の例外を説明するメッセージ
+  description … 現在の例外の原因である例外。内部例外を指定しない場合はnullを設定
+
+
+5. サンプル
+
+5.1 SampleMmlReceiverサンプル
+
+　SampleMmlReceiverサンプルは、MMLドキュメントを受信し、ACKを返す簡単な
+MMLドキュメント受信プラグインモジュールです。使用するには、SampleMmlReceiver.dllを
+MmlInspector.exeと同じディレクトリに移動またはコピーします。また、MML Inspectorを
+動作させる端末のファイアウォールの設定で通信を許可してください。
+
+　開発環境: Visual Studio 2010 (C#) .NET Framework 3.5
+
+5.2 SampleMmlSenderサンプル
+
+　SampleMmlSenderサンプルは、SampleMmlReceiverサンプルを組み込んだMML Inspectorと
+通信するためのクライアントプログラムです。
+
+　開発環境: Visual Studio 2010 (C#) .NET Framework 3.5
+
+5.3 V23MmlReceiverサンプル
+
+　V23MmlReceiverサンプルは、SampleMmlReceiverサンプルをMML Version 2.3ドキュメントを
+受信するように変更したMMLドキュメント受信プラグインモジュールです。SampleMmlSender
+サンプルを使用して、MML Version 2.3 ドキュメントを送信できます。
+
+　開発環境: Visual Studio 2010 (C#) .NET Framework 3.5
+
+
+---
+Copyright (C) 2012 2013 yos731, All rights reserved.

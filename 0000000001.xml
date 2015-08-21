@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?> 			
+<Mml version="2.3" createDate="2015-08-19T10:10:00" 			
+	 xmlns:xhtml="http://www.w3.org/1999/xhtml"		
+	 xmlns:mmlCm="http://www.medxml.net/MML/SharedComponent/Common/1.0"		
+	 xmlns:mmlNm="http://www.medxml.net/MML/SharedComponent/Name/1.0"		
+	 xmlns:mmlFc="http://www.medxml.net/MML/SharedComponent/Facility/1.0"		
+	 xmlns:mmlDp="http://www.medxml.net/MML/SharedComponent/Department/1.0"		
+	 xmlns:mmlAd="http://www.medxml.net/MML/SharedComponent/Address/1.0"		
+	 xmlns:mmlPh="http://www.medxml.net/MML/SharedComponent/Phone/1.0"		
+	 xmlns:mmlPsi="http://www.medxml.net/MML/SharedComponent/PersonalizedInfo/1.0"		
+	 xmlns:mmlCi="http://www.medxml.net/MML/SharedComponent/CreatorInfo/1.0"		
+	 xmlns:mmlPi="http://www.medxml.net/MML/ContentModule/PatientInfo/1.0"		
+	 xmlns:mmlBc="http://www.medxml.net/MML/ContentModule/BaseClinic/1.0"		
+	 xmlns:mmlFcl="http://www.medxml.net/MML/ContentModule/FirstClinic/1.0"		
+	 xmlns:mmlHi="http://www.medxml.net/MML/ContentModule/HealthInsurance/1.1"		
+	 xmlns:mmlLs="http://www.medxml.net/MML/ContentModule/Lifestyle/1.0"		
+	 xmlns:mmlPc="http://www.medxml.net/MML/ContentModule/ProgressCourse/1.0"		
+	 xmlns:mmlRd="http://www.medxml.net/MML/ContentModule/RegisteredDiagnosis/1.0"		
+	 xmlns:mmlSg="http://www.medxml.net/MML/ContentModule/Surgery/1.0"		
+	 xmlns:mmlSm="http://www.medxml.net/MML/ContentModule/Summary/1.0"		
+	 xmlns:mmlLb="http://www.medxml.net/MML/ContentModule/test/1.0"		
+	 xmlns:mmlRp="http://www.medxml.net/MML/ContentModule/report/1.0"		
+	 xmlns:mmlRe="http://www.medxml.net/MML/ContentModule/Referral/1.0"		
+	 xmlns:mmlSc="http://www.medxml.net/MML/SharedComponent/Security/1.0"		
+	 xmlns:claim="http://www.medxml.net/claim/claimModule/2.1"		
+	 xmlns:claimA="http://www.medxml.net/claim/claimAmountModule/2.1">		
+  <MmlHeader>			
+    <mmlCi:CreatorInfo>			
+        <mmlPsi:PersonalizedInfo>			
+            <mmlCm:Id mmlCm:type="local" mmlCm:tableId="MML0024">K01OCS</mmlCm:Id> 			
+            <mmlPsi:personName>			
+                <mmlNm:Name mmlNm:repCode="P" mmlNm:tableId="MML0025">			
+                    <mmlNm:fullname>K01OCS</mmlNm:fullname> 			
+            </mmlPsi:personName>			
+            <mmlFc:Facility>			
+                <mmlFc:name mmlFc:repCode="P" mmlFc:tableId="MML0025">K01</mmlFc:name> 			
+                <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">K01</mmlCm:Id> 			
+            </mmlFc:Facility>			
+        </mmlPsi:PersonalizedInfo>			
+        <mmlCi:creatorLicense mmlCi:tableId="MML0026">doctor</mmlCi:creatorLicense> 			
+    </mmlCi:CreatorInfo>			
+    <masterId>			
+      <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">0000000001</mmlCm:Id> 			
+    </masterId>			
+    <toc>			
+      <tocItem>http://www.medxml.net/MML/SharedComponent/Common/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/SharedComponent/Name/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/SharedComponent/Facility/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/SharedComponent/Department/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/SharedComponent/Address/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/SharedComponent/Phone/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/SharedComponent/PersonalizedInfo/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/SharedComponent/CreatorInfo/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/SharedComponent/Security/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/ContentModule/PatientInfo/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/ContentModule/BaseClinic/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/ContentModule/FirstClinic/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/ContentModule/HealthInsurance/1.1</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/ContentModule/Lifestyle/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/ContentModule/ProgressCourse/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/ContentModule/RegisteredDiagnosis/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/ContentModule/Surgery/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/ContentModule/Summary/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/ContentModule/test/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/ContentModule/report/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/MML/ContentModule/Referral/1.0</tocItem> 			
+      <tocItem>http://www.medxml.net/claim/claimModule/2.1</tocItem> 			
+      <tocItem>http://www.medxml.net/claim/claimAmountModule/2.1</tocItem> 			
+    </toc>			
+  </MmlHeader>			
+  <MmlBody>			
+			
+<!---------------------------------------------------------------------------------------------------------------------------------			
+## PatientModule: each patient only has only one patient module			
+----------------------------------------------------------------------------------------------------------------------------------->			
+    <MmlModuleItem>			
+        <docInfo contentModuleType="patientInfo">			
+            <securityLevel>			
+                <accessRight permit="all">			
+                    <mmlSc:facility>			
+                        <mmlSc:facilityName mmlSc:facilityCode="creator">K01</mmlSc:facilityName>			
+                    </mmlSc:facility>			
+                </accessRight>			
+            </securityLevel>			
+            <title generationPurpose="record">カルテ</title>			
+                <docId>			
+                    <uid>$f9545935-04cd-452f-8342-ec78b9fa5e22</uid>			
+                </docId>			
+                <confirmDate>2015-08-19T10:10:00</confirmDate>			
+                <mmlCi:CreatorInfo>			
+                    <mmlPsi:PersonalizedInfo>			
+                        <mmlCm:Id mmlCm:type="local" mmlCm:tableId="MML0024">K01OCS</mmlCm:Id>			
+                        <mmlPsi:personName>			
+                            <mmlNm:Name mmlNm:repCode="P" mmlNm:tableId="MML0025">			
+                                <mmlNm:fullname>K01OCS</mmlNm:fullname>			
+                            </mmlNm:Name>			
+                        </mmlPsi:personName>			
+                    </mmlPsi:PersonalizedInfo>			
+                </mmlCi:CreatorInfo>			
+                <extRefs />			
+            </docInfo>			
+            <content>			
+                <mmlPi:PatientModule>			
+                    <mmlPi:uniqueInfo>			
+                        <mmlPi:masterId>			
+                            <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">0000000001</mmlCm:Id>			
+                        </mmlPi:masterId>			
+                    </mmlPi:uniqueInfo>			
+                    <mmlPi:personName>			
+                        <mmlNm:Name mmlNm:repCode="P" mmlNm:tableId="MML0025">			
+                            <mmlNm:fullname>サング</mmlNm:fullname>			
+                        </mmlNm:Name>			
+                        </mmlNm:Name>			
+                        <mmlNm:Name mmlNm:repCode="P" mmlNm:tableId="MML0025">			
+                            <mmlNm:fullname>サング</mmlNm:fullname>			
+                        </mmlNm:Name>			
+                    </mmlPi:personName>			
+                    <mmlPi:birthday>2015-10-13</mmlPi:birthday>			
+                    <mmlPi:sex>Male</mmlPi:sex>			
+                    <mmlPi:addresses>			
+                        <mmlAd:Address>			
+                            <mmlAd:full repCode="P">aaa</mmlAd:full>			
+                            <mmlAd:zip>bbb</mmlAd:zip>			
+                        </mmlAd:Address>			
+                    </mmlPi:addresses>			
+                    <mmlPi:phones>			
+                        <mmlPh:Phone>			
+                            <mmlPh:area></mmlPh:area>			
+                            <mmlPh:city></mmlPh:city>			
+                            <mmlPh:number></mmlPh:number>			
+                            <mmlPh:memo>111111</mmlPh:memo>			
+                        </mmlPh:Phone>			
+                     </mmlPi:phones>			
+                </mmlPi:PatientModule>			
+            </content>			
+       </MmlModuleItem>			
+			
+<!--			
+##-------------------------------------------------------------------------------------------------------------------------------			
+## progressCourse. This module will be appended if patient has many examinations 			
+##------------------------------------------------------------------------------------------------------------------------------->			
+    <MmlModuleItem>			
+        <docInfo contentModuleType="progressCourse">			
+            <securityLevel>			
+                <accessRight permit="all">			
+                    <mmlSc:facility>			
+                        <mmlSc:facilityName mmlSc:facilityCode="individual">K01</mmlSc:facilityName> 			
+                    </mmlSc:facility>			
+                </accessRight>			
+          			
+            </securityLevel>			
+            <title generationPurpose="Purpose">カルテ</title> 			
+            <docId>			
+                <uid>f9545935-04cd-452f-8342-ec78b9fa5e22</uid> 			
+            </docId>			
+            <confirmDate firstConfirmDate="FirstConfirmDate">2015-08-19T10:10:00</confirmDate> 			
+            <mmlCi:CreatorInfo>			
+                <mmlPsi:PersonalizedInfo>			
+                    <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">K01OCS</mmlCm:Id> 			
+                    <mmlPsi:personName>			
+                        <mmlNm:Name mmlNm:repCode="P" mmlNm:tableId="MML0025">			
+                            <mmlNm:fullname>K01OCS</mmlNm:fullname> 			
+                        </mmlNm:Name>			
+                    </mmlPsi:personName>			
+                    <mmlFc:Facility>			
+                        <mmlFc:name mmlFc:repCode="P" mmlFc:tableId="MML0025">K01</mmlFc:name> 			
+                        <mmlCm:Id mmlCm:type="FacilityIdType" mmlCm:tableId="FacilityIdTableId">K01</mmlCm:Id> 			
+                    </mmlFc:Facility>			
+                </mmlPsi:PersonalizedInfo>			
+                <mmlCi:creatorLicense mmlCi:tableId="MML0026">doctor</mmlCi:creatorLicense> 			
+            </mmlCi:CreatorInfo>			
+            <extRefs />			
+        </docInfo>			
+        <content>			
+            <mmlPc:ProgressCourseModule>			
+<mmlPc:structuredExpression>			
+	<mmlPc:problemItem><mmlPc:problem>咳がしつこい気がするので，レントゲンを撮ってほしい。先月亡くなった叔父の肺癌の初期症状と似ている。家計も厳しいが娘はまだ高校生で倒れるわけにはいかない。タバコも体に悪いとは思っている。</mmlPc:problem></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:problem>咳がしつこい気がするので，レントゲンを撮ってほしい。先月亡くなった叔父の肺癌の初期症状と似ている。家計も厳しいが娘はまだ高校生で倒れるわけにはいかない。タバコも体に悪いとは思っている。</mmlPc:problem></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:problem>咳がしつこい気がするので，レントゲンを撮ってほしい。先月亡くなった叔父の肺癌の初期症状と似ている。家計も厳しいが娘はまだ高校生で倒れるわけにはいかない。タバコも体に悪いとは思っている。</mmlPc:problem></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:subjective>		
+		<mmlPc:subjectiveItem>	
+			<mmlPc:timeExpression>2015-08-19</mmlPc:timeExpression>
+			<mmlPc:eventExpression>咳がしつこい気がするので，レ</mmlPc:eventExpression>
+		</mmlPc:subjectiveItem>	
+		<mmlPc:subjectiveItem>	
+			<mmlPc:timeExpression>2015-08-19</mmlPc:timeExpression>
+			<mmlPc:eventExpression>咳がしつこい気がするので，レ</mmlPc:eventExpression>
+		</mmlPc:subjectiveItem>	
+		<mmlPc:subjectiveItem>	
+			<mmlPc:timeExpression>2015-08-19</mmlPc:timeExpression>
+			<mmlPc:eventExpression>咳がしつこい気がするので，レ</mmlPc:eventExpression>
+		</mmlPc:subjectiveItem>	
+		<mmlPc:subjectiveItem>	
+			<mmlPc:timeExpression>2015-08-19</mmlPc:timeExpression>
+			<mmlPc:eventExpression>咳がしつこい気がするので，レ</mmlPc:eventExpression>
+		</mmlPc:subjectiveItem>	
+		<mmlPc:subjectiveItem>	
+			<mmlPc:timeExpression>2015-08-19</mmlPc:timeExpression>
+			<mmlPc:eventExpression>咳がしつこい気がするので，レ</mmlPc:eventExpression>
+		</mmlPc:subjectiveItem>	
+		<mmlPc:subjectiveItem>	
+			<mmlPc:timeExpression>2015-08-19</mmlPc:timeExpression>
+			<mmlPc:eventExpression>咳がしつこい気がするので，レ</mmlPc:eventExpression>
+		</mmlPc:subjectiveItem>	
+		<mmlPc:subjectiveItem>	
+			<mmlPc:timeExpression>2015-08-19</mmlPc:timeExpression>
+			<mmlPc:eventExpression>咳がしつこい気がするので，レ</mmlPc:eventExpression>
+		</mmlPc:subjectiveItem>	
+		<mmlPc:subjectiveItem>	
+			<mmlPc:timeExpression>2015-08-19</mmlPc:timeExpression>
+			<mmlPc:eventExpression>咳がしつこい気がするので，レ</mmlPc:eventExpression>
+		</mmlPc:subjectiveItem>	
+		<mmlPc:subjectiveItem>	
+			<mmlPc:timeExpression>2015-08-19</mmlPc:timeExpression>
+			<mmlPc:eventExpression>咳がしつこい気がするので，レ</mmlPc:eventExpression>
+		</mmlPc:subjectiveItem>	
+	</mmlPc:subjective></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:objective><mmlPc:objectiveNotes>つこい気<mmlPc:objectiveNotes></mmlPc:objective></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:objective><mmlPc:objectiveNotes>つこい気<mmlPc:objectiveNotes></mmlPc:objective></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:objective><mmlPc:objectiveNotes>つこい気<mmlPc:objectiveNotes></mmlPc:objective></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:objective><mmlPc:objectiveNotes>つこい気<mmlPc:objectiveNotes></mmlPc:objective></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:objective><mmlPc:objectiveNotes>つこい気<mmlPc:objectiveNotes></mmlPc:objective></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:objective><mmlPc:objectiveNotes>つこい気<mmlPc:objectiveNotes></mmlPc:objective></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:assessment>		
+		<mmlPc:assessmentItem>つこい気</mmlPc:assessmentItem>	
+		<mmlPc:assessmentItem>つこい</mmlPc:assessmentItem>	
+		<mmlPc:assessmentItem>つこい気</mmlPc:assessmentItem>	
+		<mmlPc:assessmentItem>つこい気</mmlPc:assessmentItem>	
+	</mmlPc:assessment></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:plan><mmlPc:planNotes>つこい気</mmlPc:planNotes></mmlPc:plan></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:plan><mmlPc:planNotes>つこい気</mmlPc:planNotes></mmlPc:plan></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:plan><mmlPc:planNotes>つこい気</mmlPc:planNotes></mmlPc:plan></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:plan><mmlPc:planNotes>つこい気</mmlPc:planNotes></mmlPc:plan></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:plan><mmlPc:planNotes>つこい気</mmlPc:planNotes></mmlPc:plan></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:plan><mmlPc:planNotes>つこい気</mmlPc:planNotes></mmlPc:plan></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:plan><mmlPc:planNotes>つこい気</mmlPc:planNotes></mmlPc:plan></mmlPc:problemItem>		
+	<mmlPc:problemItem><mmlPc:plan><mmlPc:txOrder>order 1</mmlPc:txOrder></mmlPc:plan></mmlPc:problemItem>		
+</mmlPc:structuredExpression>			
+            </mmlPc:ProgressCourseModule>			
+        </content>			
+    </MmlModuleItem>			
+  </MmlBody>			
+</Mml>			

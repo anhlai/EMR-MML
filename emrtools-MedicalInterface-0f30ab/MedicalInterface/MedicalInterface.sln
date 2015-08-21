@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C# Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalInterface", "MedicalInterface\MedicalInterface.csproj", "{D6200D4F-1E77-44CC-87BF-E690D006051C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalInterfaceTest", "MedicalInterfaceTest\MedicalInterfaceTest.csproj", "{8E1FF45F-7CCD-4FF9-9C3B-3694FDB60BBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6200D4F-1E77-44CC-87BF-E690D006051C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6200D4F-1E77-44CC-87BF-E690D006051C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6200D4F-1E77-44CC-87BF-E690D006051C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6200D4F-1E77-44CC-87BF-E690D006051C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E1FF45F-7CCD-4FF9-9C3B-3694FDB60BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E1FF45F-7CCD-4FF9-9C3B-3694FDB60BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E1FF45F-7CCD-4FF9-9C3B-3694FDB60BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E1FF45F-7CCD-4FF9-9C3B-3694FDB60BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Mml version="2.3" createDate="2010-01-28T20:36:36"
+     xmlns:xhtml="http://www.w3.org/1999/xhtml"
+     xmlns:mmlCm="http://www.medxml.net/MML/SharedComponent/Common/1.0"
+     xmlns:mmlNm="http://www.medxml.net/MML/SharedComponent/Name/1.0"
+     xmlns:mmlFc="http://www.medxml.net/MML/SharedComponent/Facility/1.0"
+     xmlns:mmlDp="http://www.medxml.net/MML/SharedComponent/Department/1.0"
+     xmlns:mmlAd="http://www.medxml.net/MML/SharedComponent/Address/1.0"
+     xmlns:mmlPh="http://www.medxml.net/MML/SharedComponent/Phone/1.0"
+     xmlns:mmlPsi="http://www.medxml.net/MML/SharedComponent/PersonalizedInfo/1.0"
+     xmlns:mmlCi="http://www.medxml.net/MML/SharedComponent/CreatorInfo/1.0"
+     xmlns:mmlPi="http://www.medxml.net/MML/ContentModule/PatientInfo/1.0"
+     xmlns:mmlBc="http://www.medxml.net/MML/ContentModule/BaseClinic/1.0"
+     xmlns:mmlFcl="http://www.medxml.net/MML/ContentModule/FirstClinic/1.0"
+     xmlns:mmlHi="http://www.medxml.net/MML/ContentModule/HealthInsurance/1.1"
+     xmlns:mmlLs="http://www.medxml.net/MML/ContentModule/Lifestyle/1.0"
+     xmlns:mmlPc="http://www.medxml.net/MML/ContentModule/ProgressCourse/1.0"
+     xmlns:mmlRd="http://www.medxml.net/MML/ContentModule/RegisteredDiagnosis/1.0"
+     xmlns:mmlSg="http://www.medxml.net/MML/ContentModule/Surgery/1.0"
+     xmlns:mmlSm="http://www.medxml.net/MML/ContentModule/Summary/1.0"
+     xmlns:mmlLb="http://www.medxml.net/MML/ContentModule/test/1.0"
+     xmlns:mmlRp="http://www.medxml.net/MML/ContentModule/report/1.0"
+     xmlns:mmlRe="http://www.medxml.net/MML/ContentModule/Referral/1.0"
+     xmlns:mmlSc="http://www.medxml.net/MML/SharedComponent/Security/1.0"
+     xmlns:claim="http://www.medxml.net/claim/claimModule/2.1"
+     xmlns:claimA="http://www.medxml.net/claim/claimAmountModule/2.1">       
+    <MmlHeader>
+        <mmlCi:CreatorInfo>
+            <mmlPsi:PersonalizedInfo>
+                <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                    1234567
+                </mmlCm:Id>
+                <mmlPsi:personName>
+                    <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                        <mmlNm:fullname>オルカ　シャチ</mmlNm:fullname>
+                    </mmlNm:Name>
+                </mmlPsi:personName>
+                <mmlFc:Facility>
+                    <mmlFc:name mmlFc:repCode="I" mmlFc:tableId="MML0025">
+                        医療法人　オルカ医院
+                    </mmlFc:name>
+                    <mmlCm:Id mmlCm:type="insurance" mmlCm:tableId="MML0027">
+                        JPN999999999999
+                    </mmlCm:Id>
+                </mmlFc:Facility>
+                <mmlDp:Department>
+                    <mmlDp:name mmlDp:repCode="I" mmlDp:tableId="MML0025">
+                        内科
+                    </mmlDp:name>
+                    <mmlCm:Id mmlCm:type="medical" mmlCm:tableId="MML0029">
+                        01
+                    </mmlCm:Id>
+                </mmlDp:Department>
+                <mmlPsi:addresses>
+                    <mmlAd:Address mmlAd:repCode="I" mmlAd:tableId="MML0025">
+                        <mmlAd:full>
+                            東京都文京区本駒込２－２８－１６
+                        </mmlAd:full>
+                        <mmlAd:zip>
+                            113-0021
+                        </mmlAd:zip>
+                    </mmlAd:Address>
+                </mmlPsi:addresses>
+            </mmlPsi:PersonalizedInfo>
+            <mmlCi:creatorLicense mmlCi:tableId="MML0026">
+                doctor
+            </mmlCi:creatorLicense>
+        </mmlCi:CreatorInfo>
+        <masterId>
+            <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                00001
+            </mmlCm:Id>
+        </masterId>
+        <toc>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/Common/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/Name/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/Facility/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/Department/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/Address/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/Phone/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/PersonalizedInfo/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/SharedComponent/CreatorInfo/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/ContentModule/PatientInfo/1.0</tocItem>
+            <tocItem>http://www.medxml.net/MML/ContentModule/HealthInsurance/1.1</tocItem>
+            <tocItem>http://www.medxml.net/claim/claimModule/2.1</tocItem>
+        </toc>
+        <encryptInfo>no encryption</encryptInfo>
+    </MmlHeader>
+    <MmlBody>
+        <MmlModuleItem>
+            <docInfo contentModuleType="patientInfo">
+                <securityLevel>
+                    <accessRight permit="all" />
+                </securityLevel>
+                <title>
+                    Data of Regist
+                </title>
+                <docId>
+                    <uid>6386dff2-0c01-11df-abfe-000c29bf0193</uid>
+                </docId>
+                <confirmDate>2010-01-28</confirmDate>
+                <mmlCi:CreatorInfo>
+                    <mmlPsi:PersonalizedInfo>
+                        <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                            1234567
+                        </mmlCm:Id>
+                        <mmlPsi:personName>
+                            <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                                <mmlNm:fullname>オルカ　シャチ</mmlNm:fullname>
+                            </mmlNm:Name>
+                        </mmlPsi:personName>
+                        <mmlFc:Facility>
+                            <mmlFc:name mmlFc:repCode="I" mmlFc:tableId="MML0025">
+                                医療法人　オルカ医院
+                            </mmlFc:name>
+                            <mmlCm:Id mmlCm:type="insurance" mmlCm:tableId="MML0027">
+                                JPN999999999999
+                            </mmlCm:Id>
+                        </mmlFc:Facility>
+                        <mmlPsi:addresses>
+                            <mmlAd:Address mmlAd:repCode="I" mmlAd:tableId="MML0025">
+                                <mmlAd:full>
+                                    東京都文京区本駒込２－２８－１６
+                                </mmlAd:full>
+                                <mmlAd:zip>
+                                    113-0021
+                                </mmlAd:zip>
+                            </mmlAd:Address>
+                        </mmlPsi:addresses>
+                    </mmlPsi:PersonalizedInfo>
+                    <mmlCi:creatorLicense mmlCi:tableId="MML0026">
+                        doctor
+                    </mmlCi:creatorLicense>
+                </mmlCi:CreatorInfo>
+                <extRefs />
+            </docInfo>
+            <content>
+                <mmlPi:PatientModule>
+                    <mmlPi:uniqueInfo>
+                        <mmlPi:masterId>
+                            <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                                00001
+                            </mmlCm:Id>
+                        </mmlPi:masterId>
+                    </mmlPi:uniqueInfo>
+                    <mmlPi:personName>
+                        <mmlNm:Name mmlNm:repCode="P" mmlNm:tableId="MML0025">
+                            <mmlNm:fullname>ニチイ　タケオ</mmlNm:fullname>
+                        </mmlNm:Name>
+                        <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                            <mmlNm:fullname>日医　タケオ</mmlNm:fullname>
+                        </mmlNm:Name>
+                    </mmlPi:personName>
+                    <mmlPi:birthday>1985-01-01</mmlPi:birthday>
+                    <mmlPi:sex>male</mmlPi:sex>
+                    <mmlPi:death>false</mmlPi:death>
+                </mmlPi:PatientModule>
+            </content>
+        </MmlModuleItem>
+        <MmlModuleItem>
+            <docInfo contentModuleType="healthInsurance">
+                <securityLevel>
+                    <accessRight permit="all" />
+                </securityLevel>
+                <title>
+                    Data of Regist
+                </title>
+                <docId>
+                    <uid>6392919e-0c01-11df-abfe-000c29bf0193</uid>
+                </docId>
+                <confirmDate>2010-01-28</confirmDate>
+                <mmlCi:CreatorInfo>
+                    <mmlPsi:PersonalizedInfo>
+                        <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                            1234567
+                        </mmlCm:Id>
+                        <mmlPsi:personName>
+                            <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                                <mmlNm:fullname>オルカ　シャチ</mmlNm:fullname>
+                            </mmlNm:Name>
+                        </mmlPsi:personName>
+                        <mmlFc:Facility>
+                            <mmlFc:name mmlFc:repCode="I" mmlFc:tableId="MML0025">
+                                医療法人　オルカ医院
+                            </mmlFc:name>
+                            <mmlCm:Id mmlCm:type="insurance" mmlCm:tableId="MML0027">
+                                JPN999999999999
+                            </mmlCm:Id>
+                        </mmlFc:Facility>
+                        <mmlDp:Department>
+                            <mmlDp:name mmlDp:repCode="I" mmlDp:tableId="MML0025">
+                                内科
+                            </mmlDp:name>
+                            <mmlCm:Id mmlCm:type="medical" mmlCm:tableId="MML0029">
+                                01
+                            </mmlCm:Id>
+                        </mmlDp:Department>
+                        <mmlPsi:addresses>
+                            <mmlAd:Address mmlAd:repCode="I" mmlAd:tableId="MML0025">
+                                <mmlAd:full>
+                                    東京都文京区本駒込２－２８－１６
+                                </mmlAd:full>
+                                <mmlAd:zip>
+                                    113-0021
+                                </mmlAd:zip>
+                            </mmlAd:Address>
+                        </mmlPsi:addresses>
+                    </mmlPsi:PersonalizedInfo>
+                    <mmlCi:creatorLicense mmlCi:tableId="MML0026">
+                        doctor
+                    </mmlCi:creatorLicense>
+                </mmlCi:CreatorInfo>
+                <extRefs />
+            </docInfo>
+            <content>
+                <mmlHi:HealthInsuranceModule mmlHi:countryType="JPN">
+                    <mmlHi:insuranceClass mmlHi:ClassCode="09" mmlHi:tableId="MML0031">
+                        協会けんぽ
+                    </mmlHi:insuranceClass>
+                    <mmlHi:insuranceNumber>01430016</mmlHi:insuranceNumber>
+                    <mmlHi:clientId>
+                        <mmlHi:group>１２</mmlHi:group>
+                        <mmlHi:number>１２３４</mmlHi:number>
+                    </mmlHi:clientId>
+                    <mmlHi:familyClass>true</mmlHi:familyClass>
+                    <mmlHi:startDate>2010-01-25</mmlHi:startDate>
+                    <mmlHi:expiredDate>9999-12-31</mmlHi:expiredDate>
+                    <mmlHi:paymentOutRatio>0.30</mmlHi:paymentOutRatio>
+                </mmlHi:HealthInsuranceModule>
+            </content>
+        </MmlModuleItem>
+        <MmlModuleItem>
+            <docInfo contentModuleType="healthInsurance">
+                <securityLevel>
+                    <accessRight permit="all" />
+                </securityLevel>
+                <title>
+                    Data of Regist
+                </title>
+                <docId>
+                    <uid>63983e50-0c01-11df-abfe-000c29bf0193</uid>
+                </docId>
+                <confirmDate>2010-01-28</confirmDate>
+                <mmlCi:CreatorInfo>
+                    <mmlPsi:PersonalizedInfo>
+                        <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                            1234567
+                        </mmlCm:Id>
+                        <mmlPsi:personName>
+                            <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                                <mmlNm:fullname>オルカ　シャチ</mmlNm:fullname>
+                            </mmlNm:Name>
+                        </mmlPsi:personName>
+                        <mmlFc:Facility>
+                            <mmlFc:name mmlFc:repCode="I" mmlFc:tableId="MML0025">
+                                医療法人　オルカ医院
+                            </mmlFc:name>
+                            <mmlCm:Id mmlCm:type="insurance" mmlCm:tableId="MML0027">
+                                JPN999999999999
+                            </mmlCm:Id>
+                        </mmlFc:Facility>
+                        <mmlDp:Department>
+                            <mmlDp:name mmlDp:repCode="I" mmlDp:tableId="MML0025">
+                                内科
+                            </mmlDp:name>
+                            <mmlCm:Id mmlCm:type="medical" mmlCm:tableId="MML0029">
+                                01
+                            </mmlCm:Id>
+                        </mmlDp:Department>
+                        <mmlPsi:addresses>
+                            <mmlAd:Address mmlAd:repCode="I" mmlAd:tableId="MML0025">
+                                <mmlAd:full>
+                                    東京都文京区本駒込２－２８－１６
+                                </mmlAd:full>
+                                <mmlAd:zip>
+                                    113-0021
+                                </mmlAd:zip>
+                            </mmlAd:Address>
+                        </mmlPsi:addresses>
+                    </mmlPsi:PersonalizedInfo>
+                    <mmlCi:creatorLicense mmlCi:tableId="MML0026">
+                        doctor
+                    </mmlCi:creatorLicense>
+                </mmlCi:CreatorInfo>
+                <extRefs />
+            </docInfo>
+            <content>
+                <mmlHi:HealthInsuranceModule mmlHi:countryType="JPN">
+                    <mmlHi:insuranceClass mmlHi:ClassCode="09" mmlHi:tableId="MML0031">
+                        協会けんぽ
+                    </mmlHi:insuranceClass>
+                    <mmlHi:insuranceNumber>01430016</mmlHi:insuranceNumber>
+                    <mmlHi:clientId>
+                        <mmlHi:group>１２</mmlHi:group>
+                        <mmlHi:number>１２３４</mmlHi:number>
+                    </mmlHi:clientId>
+                    <mmlHi:familyClass>true</mmlHi:familyClass>
+                    <mmlHi:startDate>2010-01-25</mmlHi:startDate>
+                    <mmlHi:expiredDate>9999-12-31</mmlHi:expiredDate>
+                    <mmlHi:paymentOutRatio>0.30</mmlHi:paymentOutRatio>
+                    <mmlHi:publicInsurance>
+                        <mmlHi:publicInsuranceItem mmlHi:priority="1">
+                            <mmlHi:providerName>特定負有</mmlHi:providerName>
+                            <mmlHi:provider>51136026</mmlHi:provider>
+                            <mmlHi:recipient>mikinyu</mmlHi:recipient>
+                            <mmlHi:startDate>2010-01-25</mmlHi:startDate>
+                            <mmlHi:expiredDate>9999-12-31</mmlHi:expiredDate>
+                            <mmlHi:paymentRatio mmlHi:ratioType="ratio">0.00</mmlHi:paymentRatio>
+                        </mmlHi:publicInsuranceItem>
+                    </mmlHi:publicInsurance>
+                </mmlHi:HealthInsuranceModule>
+            </content>
+        </MmlModuleItem>
+        <MmlModuleItem>
+            <docInfo contentModuleType="claim">
+                <securityLevel>
+                    <accessRight permit="all" />
+                </securityLevel>
+                <title>
+                    Data of Regist
+                </title>
+                <docId>
+                    <uid>6388d960-0c01-11df-abfe-000c29bf0193</uid>
+                </docId>
+                <confirmDate>2010-01-28</confirmDate>
+                <mmlCi:CreatorInfo>
+                    <mmlPsi:PersonalizedInfo>
+                        <mmlCm:Id mmlCm:type="facility" mmlCm:tableId="MML0024">
+                            1234567
+                        </mmlCm:Id>
+                        <mmlPsi:personName>
+                            <mmlNm:Name mmlNm:repCode="I" mmlNm:tableId="MML0025">
+                                <mmlNm:fullname>オルカ　シャチ</mmlNm:fullname>
+                            </mmlNm:Name>
+                        </mmlPsi:personName>
+                        <mmlFc:Facility>
+                            <mmlFc:name mmlFc:repCode="I" mmlFc:tableId="MML0025">
+                                医療法人　オルカ医院
+                            </mmlFc:name>
+                            <mmlCm:Id mmlCm:type="insurance" mmlCm:tableId="MML0027">
+                                JPN999999999999
+                            </mmlCm:Id>
+                        </mmlFc:Facility>
+                        <mmlDp:Department>
+                            <mmlDp:name mmlDp:repCode="I" mmlDp:tableId="MML0025">
+                                内科
+                            </mmlDp:name>
+                            <mmlCm:Id mmlCm:type="medical" mmlCm:tableId="MML0029">
+                                01
+                            </mmlCm:Id>
+                        </mmlDp:Department>
+                        <mmlPsi:addresses>
+                            <mmlAd:Address mmlAd:repCode="I" mmlAd:tableId="MML0025">
+                                <mmlAd:full>
+                                    東京都文京区本駒込２－２８－１６
+                                </mmlAd:full>
+                                <mmlAd:zip>
+                                    113-0021
+                                </mmlAd:zip>
+                            </mmlAd:Address>
+                        </mmlPsi:addresses>
+                    </mmlPsi:PersonalizedInfo>
+                    <mmlCi:creatorLicense mmlCi:tableId="MML0026">
+                        doctor
+                    </mmlCi:creatorLicense>
+                </mmlCi:CreatorInfo>
+                <extRefs />
+            </docInfo>
+            <content>
+                <claim:ClaimModule>
+                    <claim:information claim:status="info" claim:registTime="2010-01-28T20:36:33" claim:admitFlag="false">
+                        <claim:appoint>
+                            <claim:memo>
+                                XX
+                            </claim:memo>
+                        </claim:appoint>
+                        <claim:patientDepartment>
+                            <mmlDp:Department>
+                                <mmlDp:name mmlDp:repCode="I" mmlDp:tableId="MML0025">
+                                    内科
+                                </mmlDp:name>
+                            </mmlDp:Department>
+                        </claim:patientDepartment>
+                    </claim:information>
+                    <claim:bundle claim:classCode="110" claim:classCodeId="Claim007">
+                        <claim:className>診療料</claim:className>
+                        <claim:bundleNumber>1</claim:bundleNumber>
+                        <claim:item claim:subclassCode="0" claim:subclassCodeId="Claim003" claim:code="111000110" claim:tableId="tbl_tensu">
+                            <claim:name>初診</claim:name>
+                        </claim:item>
+                    </claim:bundle>
+                </claim:ClaimModule>
+            </content>
+        </MmlModuleItem>
+    </MmlBody>
+</Mml>
